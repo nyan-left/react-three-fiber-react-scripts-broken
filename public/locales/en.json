@@ -1,0 +1,12 @@
+{
+  "BUTTON_PLACE_OBJECT": "Place Object",
+  "BUTTON_PICK_UP_OBJECT": "Pickup Object",
+  "BUTTON_START_ANIMATION": "Start animation",
+  "BUTTON_STOP_ANIMATION": "Stop animation",
+  "BUTTON_START_ROTATION": "Start rotation",
+  "BUTTON_STOP_ROTATION": "Stop rotation",
+  "BUTTON_SHARE_SCREENSHOT": "Share Screenshot",
+  "TEST": "Test English",
+  "BUTTON_GERMAN": "German",
+  "BUTTON_ENGLISH": "English"
+}

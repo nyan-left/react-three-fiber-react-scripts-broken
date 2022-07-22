@@ -1,0 +1,28 @@
+.CustomLoader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2d2d2d;
+  color: white;
+  flex-direction: column;
+
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+
+  .Progress {
+    display: flex;
+    flex-direction: column;
+
+    > div {
+      text-align: center;
+    }
+
+    > :last-child {
+      color: #9b9b9b;
+      margin-top: 0.8rem;
+      font-size: 0.8rem;
+    }
+  }
+}

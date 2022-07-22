@@ -1,0 +1,70 @@
+{
+  "name": "instant-tracking-typescript",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@react-three/drei": "^8.20.2",
+    "@react-three/fiber": "^7.0.27",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.11.26",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "@types/three": "^0.139.0",
+    "@zappar/zappar-react-three-fiber": "^1.2.6",
+    "i18next": "^21.8.14",
+    "prettier": "^2.7.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-i18next": "^11.18.1",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.53.0",
+    "three": "0.139.0",
+    "typescript": "^4.6.3",
+    "use-async-effect": "^2.2.6",
+    "use-react-screenshot": "^3.0.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider HTTPS=true react-app-rewired start",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "i18n:analyze": "npx i18next 'src/**/*.{ts,tsx}' -c i18next-parser.config.mjs"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 100
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": ".",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "i18next-parser": "^6.5.0",
+    "postcss": "^8.4.14",
+    "react-app-rewired": "^2.2.1",
+    "tailwindcss": "^3.1.6"
+  }
+}

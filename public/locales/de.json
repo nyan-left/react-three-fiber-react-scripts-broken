@@ -1,0 +1,12 @@
+{
+  "BUTTON_PLACE_OBJECT": "Objekt platzieren",
+  "BUTTON_PICK_UP_OBJECT": "Objekt aufhebe",
+  "BUTTON_START_ANIMATION": "Animation starten",
+  "BUTTON_STOP_ANIMATION": "Animation stoppen",
+  "BUTTON_START_ROTATION": "Rotation starten",
+  "BUTTON_STOP_ROTATION": "Rotation stoppen",
+  "BUTTON_SHARE_SCREENSHOT": "Screenshot teilen",
+  "TEST": "Test Deutsch",
+  "BUTTON_GERMAN": "Deutsch",
+  "BUTTON_ENGLISH": "Englisch"
+}
