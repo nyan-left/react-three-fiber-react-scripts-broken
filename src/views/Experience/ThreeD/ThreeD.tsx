@@ -11,9 +11,10 @@ const ThreeD: React.FunctionComponent<ThreeDProps> = ({ placementMode, playAnima
 
     setLogLevel(LogLevel.LOG_LEVEL_VERBOSE);
 
+    const Camera = React.useMemo(()=> <ZapparCamera  />, [])
     return (
         <ZapparCanvas gl={{ preserveDrawingBuffer: true }}>
-            <ZapparCamera  />
+            {Camera}
             <InstantTracker placementMode={placementMode} placementCameraOffset={[0, 0, -5]}></InstantTracker>
         </ZapparCanvas>
     )
