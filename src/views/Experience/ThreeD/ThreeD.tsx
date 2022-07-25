@@ -7,6 +7,15 @@ export type ThreeDProps = {
     rotate: boolean
 }
 
+const Box : React.FC = () => {
+    return (
+        <mesh>
+            <boxGeometry args={[1, 1, 1]} />
+            <meshBasicMaterial color={'orange'} />
+        </mesh>
+    )
+}
+
 const ThreeD: React.FunctionComponent<ThreeDProps> = ({ placementMode, playAnimation, rotate }) => {
 
     setLogLevel(LogLevel.LOG_LEVEL_VERBOSE);
@@ -15,7 +24,9 @@ const ThreeD: React.FunctionComponent<ThreeDProps> = ({ placementMode, playAnima
     return (
         <ZapparCanvas gl={{ preserveDrawingBuffer: true }}>
             {Camera}
-            <InstantTracker placementMode={placementMode} placementCameraOffset={[0, 0, -5]}></InstantTracker>
+            <InstantTracker placementMode={placementMode} placementCameraOffset={[0, 0, -5]}>
+                <Box />
+            </InstantTracker>
         </ZapparCanvas>
     )
 }
