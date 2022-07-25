@@ -1,5 +1,5 @@
 import React from 'react'
-import { ZapparCanvas, ZapparCamera } from '@zappar/zappar-react-three-fiber'
+import { ZapparCanvas, ZapparCamera, InstantTracker } from '@zappar/zappar-react-three-fiber'
 
 export type ThreeDProps = {
     placementMode: boolean
@@ -10,7 +10,8 @@ export type ThreeDProps = {
 const ThreeD: React.FunctionComponent<ThreeDProps> = ({ placementMode, playAnimation, rotate }) => {
     return (
         <ZapparCanvas gl={{ preserveDrawingBuffer: true }}>
-            <ZapparCamera/>
+            <ZapparCamera />
+            <InstantTracker placementMode={placementMode} placementCameraOffset={[0, 0, -5]}></InstantTracker>
         </ZapparCanvas>
     )
 }
